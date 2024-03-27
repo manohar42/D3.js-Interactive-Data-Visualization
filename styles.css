@@ -1,0 +1,216 @@
+.selected {
+    stroke: #333;
+    stroke-width: 2px;
+}
+
+/* Styles for the tabs container */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  background-color: #f3f3f3;
+  box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+}
+
+/* Styles for each individual tab */
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+/* Styles for the active tab */
+.tab.active {
+  background-color: lightpink;
+  border-bottom: none;
+  position: relative;
+  top: 1px;
+}
+
+/* Styles for the tab content area */
+.tab-content {
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: turquoise;
+}
+
+/* Hide all tab content by default */
+.tab-content > div {
+  display: none;
+}
+
+/* Styles for the list inside tab content */
+.tab-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styles for each list item */
+.tab-content li {
+  margin: 5px 0;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+
+
+.scrollable-list {
+  max-height: 500px; /* Adjust the maximum height as needed */
+  overflow-y: auto;
+  background-color: lightgoldenrodyellow;
+}
+
+#graph svg {
+  border: 1px solid black;
+}
+
+
+#map {
+  width: 100%;
+  height: 600px;
+}
+
+#my_dataviz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+.myArea {
+  stroke-width: 0;
+}
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  background-color: white;
+  border: solid 1px #000;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  transition: opacity 0.3s;
+}
+  #my_dataviz, #bubble_id {
+    margin-bottom: 20px; /* Space between SVGs */
+  }
+
+  #bubble_id svg {
+    display: block; /* For centering SVG */
+    margin: auto;
+  }
+  #my_dataviz {
+    height: 400px;
+    background-color: powderblue;
+  }
+
+  #infoIcon:hover #infoTooltip {
+    visibility: visible;
+  }
+
+  #my_dataviz {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  
+  .myArea {
+    stroke-width: 0;
+  }
+  .tooltip {
+    opacity: 0;
+    position: absolute;
+    background-color: white;
+    border: solid 1px #000;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    transition: opacity 0.3s;
+  }
+    #my_dataviz, #bubble_id {
+      margin-bottom: 20px; /* Space between SVGs */
+    }
+  
+    #bubble_id svg {
+      display: block; /* For centering SVG */
+      margin: auto;
+    }
+    #my_dataviz {
+      height: 400px;
+      background-color: powderblue;
+    }
+  
+    #infoIcon:hover #infoTooltip {
+      visibility: visible;
+    }
+  
+  
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 60px; /* Width of the slider */
+      height: 34px; /* Height of the slider */
+    }
+    
+    /* Hide the default checkbox */
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    /* The slider */
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc; /* Slider background */
+      -webkit-transition: .4s; /* Animation for the slider */
+      transition: .4s;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 26px; /* Height of the slider handle */
+      width: 26px; /* Width of the slider handle */
+      left: 4px;
+      bottom: 4px;
+      background-color: white; /* Slider handle color */
+      -webkit-transition: .4s; /* Animation for the slider handle */
+      transition: .4s;
+    }
+    
+    input:checked + .slider {
+      background-color: #1dd774; /* Color when the slider is in "on" position */
+    }
+    
+    input:focus + .slider {
+      box-shadow: 0 0 1px #1dd774; /* Glow effect on focus */
+    }
+    
+    input:checked + .slider:before {
+      -webkit-transform: translateX(26px); /* Move the slider handle to the right on "on" */
+      -ms-transform: translateX(26px); /* For IE9 */
+      transform: translateX(26px); /* Move the slider handle to the right on "on" */
+    }
+    
+    /* Rounded sliders */
+    .slider.round {
+      border-radius: 34px;
+    }
+    
+    .slider.round:before {
+      border-radius: 50%;
+    }
+  
+    .toggle-container {
+      display: flex;
+      align-items: center; /* Aligns items vertically in the center */
+      gap: 10px; /* Adds space between the text and the toggle */
+    }

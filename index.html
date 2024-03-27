@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Dynamic Risk Visualization in Abila</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/nouislider/distribute/nouislider.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+        <script type = "module" src="js/main.js"></script>
+        <!-- <script type="module" src="js/task1.js"></script> -->
+        <link rel="stylesheet" href="styles.css">
+        <style>
+          svg{
+            border: 1px solid black;
+          }
+
+          #map {
+        width: 100%;
+        height: 600px; 
+        background-color: #aca0a0; 
+         }
+
+      .svg-container {
+        display: flex; 
+        justify-content: space-between; 
+      }
+      .svg-wrapper {
+        flex: 1; 
+        padding: 5px; 
+      }
+      .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            flex: 1;
+            min-width: calc(50% - 10px); 
+            margin-bottom: 10px;
+        }
+        .svg-item {
+            width: 700px;
+             
+            height: 600px; 
+        }
+
+  
+        #map-container {
+          position: relative; 
+        }
+
+    #map {
+        width: 100%;
+        height: 600px; /* Adjust as needed */
+        background-color:	#f5f5dc; /* Slightly darker grey for the map area */
+    }
+
+    #message-prompt {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Align to the right side */
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    animation-duration: 0.5s; /* Adjust duration as needed */
+    animation-fill-mode: forwards;
+    max-width: 600px; /* Adjust as needed */
+    width: auto;
+}
+
+#emergency-icon {
+    margin-right: 10px;
+    font-size: 20px; /* Adjust if using a font icon */
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideOut {
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
+}
+
+
+.slide-in {
+    animation-name: slideIn;
+}
+
+.slide-out {
+    animation-name: slideOut;
+}
+
+
+
+#risk-prompt {
+    position: absolute;
+    background-color: #ffffff; /* White background */
+    color: #333333; /* Dark text for readability */
+    padding: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    font-family: Arial, sans-serif; /* Consistent font */
+    max-width: 200px; /* To prevent overly wide prompts */
+}
+
+#risk-prompt button {
+    background-color: #4CAF50; /* Green button */
+    color: white;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#risk-prompt button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+#risk-message {
+    margin-bottom: 10px; /* Space before the button */
+}
+
+
+#time-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    margin: 20px auto;
+}
+
+#time-slider-container {
+    width: 300px; /* Adjust as needed */
+    position: relative;
+}
+
+.noUi-target,
+.noUi-target * {
+    box-sizing: border-box;
+}
+
+.noUi-target {
+    position: relative;
+    background: #FAFAFA;
+    border: 1px solid #D3D3D3;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.noUi-base {
+    height: 10px;
+    position: relative;
+    top: 0;
+    width: 100%;
+}
+
+.chart-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .chart-container > div {
+            margin: 10px;
+        }
+
+.noUi-handle {
+    background-color: #4CAF50;
+    border: 1px solid #367c39;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    top: -7px;
+    position: absolute;
+}
+        #graph2 {
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            width: 800px;
+            height: 450px;
+            background-color: rgb(197, 238, 197);
+        }
+
+        #graph3 {
+            border: 2px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            width: 500px;
+            height: 450px;
+            background-color: #ffe6e6;
+        }
+
+#time-controls {
+    text-align: center;
+    margin: auto;
+    width: fit-content; 
+}
+
+#time-controls h3 {
+    margin-top: 0;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time-controls .fas.fa-info-circle {
+    margin-left: 5px;
+    color: #666;
+    cursor: help;
+}
+
+#time-controls .fas.fa-info-circle:hover {
+    color: #4CAF50;
+}
+
+#time-slider-container {
+    margin-top: 20px; /* Space above the slider */
+}
+
+#play-pause-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-left: 15px; 
+    margin-top : 15px;
+    display: inline-block; 
+}
+
+#play-pause-btn:hover {
+    background-color: #367c39;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.button-icon {
+    margin-right: 5px;
+}
+
+        </style>
+    </head>
+    <body style="background-color: black;">
+           
+      <header class="text-center text-light bg-dark py-4">
+        <h1>Project Title: Dynamic Risk Visualization in Abila</h1>
+        <p class="lead">This visualization project presents an in-depth analysis of events and risk factors over time in the city of Abila, utilizing interactive graphs and maps for enhanced user engagement.</p>
+    </header>
+            <div class="col-3">
+                
+                <!-- <button id="toggleSelectionButton">Toggle Selection Mode</button> -->
+              </div>
+
+              <!-- <div id="my_dataviz">
+                <label><input type="checkbox" id="toggle-junk-spam" checked> Include 'junk/spam'</label>
+              </div> -->
+              <!-- <div style="display: flex; justify-content: space-around; align-items: center; background-color: #f2f2f2 !important; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <text style="flex-grow: 1; text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Enhanced Stream Graph Interactivity for Precision Analysis of Event Data</b></text>
+              </div> -->
+
+              <div style="display: flex; flex-direction: column; align-items: center; background-color: #f2f2f2; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                <text style="text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Enhanced Stream Graph Interactivity for Precision Analysis of Event Data</b></text>
+                <p style="text-align: center; font-size: 14px; color: #555; font-family: 'Arial', sans-serif; margin-top: 10px;">Showcases event data over time, enhanced with a checkbox feature to exclude spam data. Offers interactive time frame selection, dynamically linking to a bubble chart for focused analysis.</p>
+            </div>
+
+              <div id="my_dataviz">
+                <label><input type="checkbox" id="toggle-junk-spam" checked> Include 'junk/spam'</label>
+            </div>
+
+            <!-- <div style="display: flex; justify-content: space-around; align-items: center; background-color: #f2f2f2 !important; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              <text style="flex-grow: 1; text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Uncovering Author Contributions</b></text>
+            </div> -->
+<!-- 
+            <div style="display: flex; flex-direction: column; align-items: center; background-color: #f2f2f2; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+              <text style="text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Uncovering Author Contributions</b></text>
+              <p style="text-align: center; font-size: 14px; color: #555; font-family: 'Arial', sans-serif; margin-top: 10px;">A detailed analysis of message volume and content by individual authors.</p>
+          </div> -->
+
+          <div style="display: flex; flex-direction: column; align-items: center; background-color: #f2f2f2; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+            <text style="text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Uncovering Author Contributions</b></text>
+            <p style="text-align: center; font-size: 14px; color: #555; font-family: 'Arial', sans-serif; margin-top: 10px;">Represents message volumes by individual authors in specific timeframes, using nested circles. Interactive elements reveal author names and message counts upon hovering.</p>
+        </div>
+
+            <div id="bubble_id" style="background-color: aquamarine !important;">
+                
+            </div>
+             
+              <div id="myDataVis" style="display: flex;">
+                
+                <div id="svgContainer" style="width: 100%;">
+<!--                    
+                  <div style="display: flex; justify-content: space-around; align-items: center; background-color: #f2f2f2 !important; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); width:100%">
+                   
+                    <text style="flex-grow: 1; text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Interactive Exploration of Event Connections and Message Impact</b></text>
+                </div> -->
+                <div style="display: flex; flex-direction: column; align-items: center; background-color: #f2f2f2; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                  <text style="text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Interactive Exploration of Event Connections and Message Impact</b></text>
+                  <p style="text-align: center; font-size: 14px; color: #555; font-family: 'Arial', sans-serif; margin-top: 10px;">Displays keyword-based connections between non-spam messages and events. Nodes sized by risk scores indicate message impact. Features interactive node selection, linking to a beeswarm chart for temporal event analysis.</p>
+              </div>
+
+<div class="toggle-container">
+  <span style="color: antiquewhite;">Selection Mode</span>
+  <label class="switch">
+    <input type="checkbox" id="toggleSlider">
+    <span class="slider round"></span>
+  </label>
+</div>
+                  <div style="display: flex;">
+                    <svg width="1000" height="600" id="graph" style="background-color: cornsilk !important; display:flex" >
+                    </svg>
+                    <div id="infoBox" style="min-width: 350px; padding:10px; border:1px solid black; background:skyblue !important; margin-left: 10px;flex: 5;max-height: 600px; display: flex;">
+                      <!-- Node information will be displayed here -->
+                    </div>
+                  </div>
+                 
+
+                  <!-- <div style="display: flex; justify-content: space-around; align-items: center; background-color: #f2f2f2; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                    <text style="flex-grow: 1; text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Interactive Chronological Analysis</b></text>
+                    <text style="flex-grow: 1; text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Word Cloud</b></text>
+                    </div>
+                   -->
+                   <div style="display: flex; justify-content: space-around; align-items: center;">
+                    <div style="flex-grow: 4; display: flex; flex-direction: column; align-items: center; background-color: #f2f2f2; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <p style="text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif; width: 100%;"><b>Interactive Chronological Analysis</b></p>
+                        <p style="text-align: center; font-size: 14px; color: #555; font-family: 'Arial', sans-serif; margin-top: 10px; width: 100%;">Visualizes the chronology of messages from the network graph. The density of circles indicates event intensity, with movable bars for time-specific focus. Links to a word cloud for detailed word frequency analysis.</p>
+                    </div>
+                    <div style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; background-color: #f2f2f2; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                        <p style="text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif; width: 100%;"><b>Word Cloud</b></p>
+                        <p style="text-align: center; font-size: 14px; color: #555; font-family: 'Arial', sans-serif; margin-top: 10px; width: 100%;">Generated from the beeswarm graph, highlights prevalent words in messages within a selected timeframe. Word sizes reflect frequency, offering insights into dominant themes.</p>
+                    </div>
+                  </div>
+                    <div class="chart-container">
+                      <div class="chart">
+                          <svg id="graph2"></svg>
+                      </div>
+                      <br>
+                      <div class="chart">
+                          <svg id="graph3"></svg>
+                      </div>
+                      </div>
+                
+
+
+                  <!-- <div style="display: flex; justify-content: space-around; align-items: center; background-color: #f2f2f2 !important; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                    <text style="flex-grow: 1; text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Abila's Animated Risk Map: Icon-Enhanced Event Visualization</b></text> </div> -->
+                    <div style="display: flex; flex-direction: column; align-items: center; background-color: #f2f2f2; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);">
+                      <text style="text-align: center; font-size: 20px; color: #333; font-family: 'Arial', sans-serif;"><b>Abila's Animated Risk Map: Icon-Enhanced Event Visualization</b></text>
+                      <p style="text-align: center; font-size: 14px; color: #555; font-family: 'Arial', sans-serif; margin-top: 10px;">Uses icons (car collision, shield, flame) to mark incidents on a map, with animated temporal progression. Icons' size and pulsation indicate risk level and recency of events within a 30-minute window.</p>
+                  </div>
+                 
+                    <div id="map-container"> 
+                  <svg id="map" width="960" height="600"></svg>
+                  <div id="message-prompt">
+                      <!-- <span id="emergency-icon">🚨</span> Using an emoji as an example -->
+                      <span id="message-text"></span>
+                  </div>
+                  <div id="risk-prompt" style="display: none;">
+                      <div id="risk-message"></div>
+                      <button id="action-taken">Action Taken</button>
+                  </div>
+              </div>
+                  <div id="time-controls">
+                      <h3>
+                          Time Control
+                          <i class="fas fa-info-circle" title="To interact with the map, set a start time (HHMMSS) and end time (HHMMSS)."></i>
+                      </h3><br><br>
+                      <div id="time-slider-container">
+                          <div id="time-slider"></div> 
+                      </div>
+                      <button id="play-pause-btn">
+                          <span class="button-icon"><i class="fas fa-play"></i></span>
+                          <span class="button-text">Play</span>
+                      </button>
+                  </div>
+                  
+                
+                  <!-- <button id="startAnimation">Start Animation</button> -->
+
+                </div>
+                
+
+                <div id="myTooltip" style="position: absolute; visibility: hidden; padding: 10px; background: rgba(255, 255, 255, 0.9); border: 1px solid #ddd; border-radius: 3px; pointer-events: none; z-index: 10;"></div>
+
+            
+                <!-- Information box -->
+                
+            </div>
+
+            
+
+            <!-- <div id="myDataVis">
+                
+                    <svg width="1000" height="800" id="graph">
+                    </svg>
+                    <div id="infoBox" style="display:none; position:absolute; padding:10px; border:1px solid black; background:white;">
+                    </div>
+            </div> -->
+        </div> 
+    </body>
+</html> 
+
+
+ 

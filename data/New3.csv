@@ -1,0 +1,192 @@
+type,date,message,longitude,latitude,location,category,risk_score_nlp,Normalized_Location,Matched_Name,Tokenized_Location,Best_Match_Name
+ccdata,170000,KEEP THE PEACE-CROWD CONTROL/ABILA CITY PARK,24.849,36.05,Egeou St / Parla St,police,1,/ Egeou Parla,,"{'Parla', 'Egeou'}",Egeou Ave 5600 5698
+ccdata,170210,TRAFFIC STOP,24.825,36.048,N. Els St / N. Polvo St,vehicle accident,1,/ Els N. N. Polvo,,"{'Els', 'Polvo'}",S Els St 7400 7498
+ccdata,170513,PARK CHECK,24.902,36.068,2099 Sannan Pky,police,1,2099 Sannan,2000 2098 Sannan,{'Sannan'},Sannan Pky 2000 2098
+ccdata,171102,DISTURBANCE-NOISE,24.842,36.074,3654 N. Barwyn St,police,1,3654 Barwyn N.,Barwyn,{'Barwyn'},N Barwyn St 6200 6298
+ccdata,171153,ALARM-SECURE NO CRIME,24.852,36.078,3815 N. Blant St,police,0,3815 Blant N.,,{'Blant'},N Blant St 5300 5400
+ccdata,171159,MISDEMEANOR ASSAULT-IN PROGRESS,24.846,36.086,N. Dentro St / N. Omirou St,police,1,/ Dentro N. N. Omirou,,"{'Dentro', 'Omirou'}",N Dentro St 5700 5898
+ccdata,171447,SUBJECT STOP,24.842,36.074,3815 N. Barwyn St,police,2,3815 Barwyn N.,Barwyn,{'Barwyn'},N Barwyn St 6200 6298
+ccdata,171501,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.888,36.063,436 Zefirou Ave,police,2,436 Zefirou,2432 2462 Zefirou,{'Zefirou'},N Zefirou Ave 2800 2898
+ccdata,171513,TRAFFIC STOP,24.844,36.076,3703 N. Pilau St,vehicle accident,1,3703 N. Pilau,4732 4798 Pilau,{'Pilau'},N Pilau St 3699 3097
+ccdata,171600,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,171725,BUSINESS CHECK,24.879,36.075,898 N. Utanfor St,junk/spam,0,898 N. Utanfor,800 898 Utanfor,{'Utanfor'},N Utanfor St 3600 3698
+ccdata,171800,VEHICLE ACCIDENT-REPORT,24.827,36.067,N. Spetson St / N. Arkadou St,vehicle accident,1,/ Arkadou N. N. Spetson,,"{'Spetson', 'Arkadou'}",N Arkadou St 7200 7298
+ccdata,171833,CHECK ON HAZARD,24.826,36.065,4304 N. Arbete St,police,2,4304 Arbete N.,4300 4398 Arbete,{'Arbete'},N Arbete St 7200 7298
+ccdata,171900,DISTURBANCE-NOISE,24.884,36.072,3177 N. Gounaraki St,police,1,3177 Gounaraki N.,701 799 Gounaraki,{'Gounaraki'},N Gounaraki St 3300 3398
+ccdata,172100,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,172200,VEHICLE ACCIDENT-REPORT,24.855,36.09,2582 N. Parla St,vehicle accident,1,2582 N. Parla,4822 4872 Parla,{'Parla'},N Parla St 4908 4998
+ccdata,172247,TRAFFIC STOP,24.847,36.062,4133 N. Androutsou St,vehicle accident,2,4133 Androutsou N.,4300 4398 Androutsou,{'Androutsou'},N Androutsou St 5700 5898
+ccdata,172251,ALARM-SECURE NO CRIME,24.852,36.078,4357 N. Blant St,police,0,4357 Blant N.,,{'Blant'},N Blant St 5300 5400
+ccdata,172322,SUBJECT STOP,24.852,36.072,4252 N. Bairn St,police,1,4252 Bairn N.,4200 4298 Bairn,{'Bairn'},N Bairn St 5300 5412
+ccdata,172545,MISDEMEANOR ASSAULT-IN PROGRESS,24.852,36.072,N. Gounaraki St / N. Bairn Stt,police,2,/ Bairn Gounaraki N. N. Stt,,"{'Gounaraki', 'Stt', 'Bairn'}",N Bairn St 5300 5412
+ccdata,172551,TRAFFIC STOP,24.855,36.092,Rist Way / Niovis St,vehicle accident,1,/ Niovis Rist Way,Rist Way,"{'Niovis', 'Way', 'Rist'}",Rist Way 5100 5198
+ccdata,172642,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,172658,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.847,36.062,2673 N. Androutsou St,police,2,2673 Androutsou N.,4600 4798 Androutsou,{'Androutsou'},N Androutsou St 5700 5898
+ccdata,172700,SUBJECT STOP,24.843,36.093,3351 N. Tzavella St,police,2,3351 N. Tzavella,5100 5298 Tzavella,{'Tzavella'},N Tzavella St 5100 5298
+ccdata,172745,DISTURBANCE-NOISE,24.884,36.072,3198 N. Gounaraki St,police,1,3198 Gounaraki N.,3100 3198 Gounaraki,{'Gounaraki'},N Gounaraki St 3300 3398
+ccdata,172802,CROWD CONTROL-STREET CLOSURE,24.849,36.05,N. Parla St from Egeou Ave North to N. Alm St,police,1,Alm Egeou N. N. North Parla from to,,"{'from', 'Egeou', 'to', 'Parla', 'Alm', 'North'}",Egeou Ave 5600 5698
+ccdata,172900,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.844,36.076,N. Pilau St / N. Carnero St,police,2,/ Carnero N. N. Pilau,,"{'Carnero', 'Pilau'}",N Pilau St 3699 3097
+ccdata,173200,ALARM-SECURE NO CRIME,24.839,36.071,3234 N. Avionos St,police,0,3234 Avionos N.,3200 3298 Avionos,{'Avionos'},N Avionos St 6400 6498
+ccdata,173400,VEHICLE ACCIDENT-REPORT,24.827,36.067,N. Taxiarchon St / N. Arkadou St,vehicle accident,2,/ Arkadou N. N. Taxiarchon,,"{'Taxiarchon', 'Arkadou'}",N Arkadou St 7200 7298
+ccdata,173501,TRAFFIC STOP,24.833,36.067,N. Artakis St / N. Evzonon St,vehicle accident,1,/ Artakis Evzonon N. N.,,"{'Artakis', 'Evzonon'}",N Artakis St 6700 6898
+ccdata,173611,PARK CHECK,24.836,36.067,2999 N. Arkadiou St,police,1,2999 Arkadiou N.,2300 2998 Arkadiou,{'Arkadiou'},N Arkadiou St 6499 6301
+ccdata,173802,BUSINESS CHECK,24.826,36.055,S. Achilleos St / S. Utanfor St,junk/spam,0,/ Achilleos S. S. Utanfor,,"{'Achilleos', 'Utanfor'}",N Achilleos St 7300 7398
+ccdata,173814,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,173900,TRAFFIC STOP,24.902,36.068,2014 Sannan Pky,vehicle accident,1,2014 Sannan,176 520 Sannan,{'Sannan'},Sannan Pky 2000 2098
+ccdata,174056,SUBJECT STOP,24.856,36.075,N. Berlau St / N. Taxiarchon Ave,police,2,/ Berlau N. N. Taxiarchon,,"{'Berlau', 'Taxiarchon'}",N Berlau St 5000 5098
+ccdata,174100,DISTURBANCE-NOISE,24.827,36.067,4777 N. Arkadou St,police,1,4777 Arkadou N.,Arkadou,{'Arkadou'},N Arkadou St 7200 7298
+ccdata,174200,VEHICLE ACCIDENT-REPORT,24.855,36.092,Vissaraki St / Rist Way,vehicle accident,2,/ Rist Vissaraki Way,Vissaraki,"{'Way', 'Vissaraki', 'Rist'}",Rist Way 5100 5198
+ccdata,174231,TRAFFIC STOP,24.856,36.059,N. Alexandrias St / N. Evzonon St,vehicle accident,1,/ Alexandrias Evzonon N. N.,,"{'Alexandrias', 'Evzonon'}",N Alexandrias St 5000 5098
+ccdata,174309,MISDEMEANOR ASSAULT-IN PROGRESS,24.833,36.067,2211 N. Artakis St,police,2,2211 Artakis N.,2100 2198 Artakis,{'Artakis'},N Artakis St 6700 6898
+ccdata,174400,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.879,36.075,1439 N. Utanfor St,police,2,1439 N. Utanfor,713 799 Utanfor,{'Utanfor'},N Utanfor St 3600 3698
+ccdata,174611,ALARM-SECURE NO CRIME,24.837,36.07,2411 N. Averof St,police,0,2411 Averof N.,4150 4198 Averof,{'Averof'},N Averof St 6499 6401
+ccdata,174900,VEHICLE ACCIDENT-REPORT,24.844,36.076,N. Pilau St / N. Barwyn St,vehicle accident,2,/ Barwyn N. N. Pilau,,"{'Pilau', 'Barwyn'}",N Pilau St 3699 3097
+ccdata,175000,TRAFFIC STOP,24.831,36.061,N. Taxiarchon Ave / N. Alm St,vehicle accident,1,/ Alm N. N. Taxiarchon,Taxiarchon,"{'Alm', 'Taxiarchon'}",N Alm St 6900 6998
+ccdata,175123,SUBJECT STOP,24.838,36.082,N. Carnero St / N. Omirou St,police,2,/ Carnero N. N. Omirou,,"{'Carnero', 'Omirou'}",N Carnero St 6400 6498
+ccdata,175232,BUSINESS CHECK,24.844,36.058,N. Agisilaou St / N. Lumen St,junk/spam,0,/ Agisilaou Lumen N. N.,,"{'Agisilaou', 'Lumen'}",N Agisilaou St
+ccdata,175359,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,180401,ALARM-SECURE NO CRIME,24.87,36.077,3247 N. Mikonou St,police,0,3247 Mikonou N.,3700 3798 Mikonou,{'Mikonou'},N Mikonou St 3800 3898
+ccdata,180447,DISTURBANCE-NOISE,24.889,36.064,101 Vatopediou Rd,police,1,101 Vatopediou,100 198 Vatopediou,{'Vatopediou'},Vatopediou Rd 100 198
+ccdata,180515,SUBJECT STOP,24.844,36.076,1919 N. Pilau St,police,2,1919 N. Pilau,1918 2098 Pilau,{'Pilau'},N Pilau St 3699 3097
+ccdata,180615,TRAFFIC STOP,24.875,36.078,2978 N. Taxiarchon Ave,vehicle accident,1,2978 N. Taxiarchon,2900 2998 Taxiarchon,{'Taxiarchon'},N Taxiarchon Ave 3600 3724
+ccdata,180752,PARK CHECK,24.875,36.078,3301 N. Taxiarchon Ave,police,1,3301 N. Taxiarchon,3301 3305 Taxiarchon,{'Taxiarchon'},N Taxiarchon Ave 3600 3724
+ccdata,180922,MISDEMEANOR ASSAULT-IN PROGRESS,24.837,36.07,5367 N. Averof St,police,2,5367 Averof N.,Averof,{'Averof'},N Averof St 6499 6401
+ccdata,181002,VANDALISM-REPORT,24.834,36.089,6055 N. Desafio St,police,2,6055 Desafio N.,6501 6575 Desafio,{'Desafio'},N Desafio St 6614 6798
+ccdata,181349,TRAFFIC STOP,24.855,36.092,Rist Way / Exadakitiou Way,vehicle accident,1,/ Exadakitiou Rist Way Way,Exadakitiou Way,"{'Way', 'Rist', 'Exadakitiou'}",Rist Way 5100 5198
+ccdata,181413,BUSINESS CHECK,24.855,36.092,2197 Rist Way,junk/spam,0,2197 Rist Way,2600 3198 Rist Way,"{'Way', 'Rist'}",Rist Way 5100 5198
+ccdata,181533,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,181634,SUBJECT STOP,24.844,36.076,N. Pilau St / N. Aveny St,police,2,/ Aveny N. N. Pilau,,"{'Aveny', 'Pilau'}",N Pilau St 3699 3097
+ccdata,181755,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.893,36.059,781 S. Maskin St,police,2,781 Maskin S.,801 899 Maskin,{'Maskin'},N Maskin St 1122 1298
+ccdata,182000,CHECK ON HAZARD,24.848,36.094,3776 N. Scarkeme St,police,2,3776 N. Scarkeme,4836 4872 Scarkeme,{'Scarkeme'},N Scarkeme St 5200 5298
+ccdata,182144,TRAFFIC STOP,24.839,36.077,5607 N. Bilar St,vehicle accident,1,5607 Bilar N.,5601 5607 Bilar,{'Bilar'},N Bilar St 6300 6398
+ccdata,182500,ALARM-SECURE NO CRIME,24.836,36.086,4678 N. Delfon St,police,0,4678 Delfon N.,4700 4798 Delfon,{'Delfon'},N Delfon St 6500 6614
+ccdata,183000,TRAFFIC STOP,24.824,36.057,N. Taxiarchon Ave / N. Agiasou St,vehicle accident,1,/ Agiasou N. N. Taxiarchon,,"{'Agiasou', 'Taxiarchon'}",N Agiasou St 7400 7498
+ccdata,183100,TRAFFIC STOP,24.838,36.082,N. Carnero St / N. Pilai St,vehicle accident,1,/ Carnero N. N. Pilai,,"{'Carnero', 'Pilai'}",N Carnero St 6400 6498
+ccdata,183221,TRAFFIC STOP,24.844,36.076,N. Pilau St / N. Aveny St,vehicle accident,1,/ Aveny N. N. Pilau,,"{'Aveny', 'Pilau'}",N Pilau St 3699 3097
+ccdata,183223,PARK CHECK,24.864,36.084,3801 N. Spetson St,police,1,3801 N. Spetson,801 899 Spetson,{'Spetson'},N Spetson St 4500 4598
+ccdata,183224,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.901,36.053,1218 Ipsilantou Ave,police,2,1218 Ipsilantou,1200 1298 Ipsilantou,{'Ipsilantou'},Ipsilantou Ave 1500 1598
+ccdata,183418,SUBJECT STOP,24.859,36.049,S. Maskin St / S. Eleftherias St,police,2,/ Eleftherias Maskin S. S.,,"{'Maskin', 'Eleftherias'}",S Eleftherias St 4800 4998
+ccdata,183500,DISTURBANCE-NOISE,24.854,36.069,3114 N. Asiant St,police,1,3114 Asiant N.,5114 5298 Asiant,{'Asiant'},N Asiant St 5114 5298
+ccdata,183725,BUSINESS CHECK,24.875,36.078,3799 N. Taxiarchon Ave,junk/spam,0,3799 N. Taxiarchon,723 799 Taxiarchon,{'Taxiarchon'},N Taxiarchon Ave 3600 3724
+ccdata,183800,TRAFFIC STOP,24.86,36.087,N. Bilar St / N. Ketallinias St,vehicle accident,1,/ Bilar Ketallinias N. N.,,"{'Bilar', 'Ketallinias'}",N Ketallinias St 4724 4800
+ccdata,184000,POSSIBLE FIRE-REPORT,24.826,36.055,N. Achilleos St / N. Madeg St,fire,3,/ Achilleos Madeg N. N.,,"{'Achilleos', 'Madeg'}",N Achilleos St 7300 7398
+ccdata,184000,POSSIBLE FIRE-REPORT,24.825,36.047,N. Madeg St / N. Acera St,fire,3,/ Acera Madeg N. N.,,"{'Madeg', 'Acera'}",S Acera St 7400 7450
+ccdata,184032,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,184100,MISDEMEANOR ASSAULT-IN PROGRESS,24.888,36.045,Makedonias St / S. Palmant St,police,2,/ Makedonias Palmant S.,,"{'Palmant', 'Makedonias'}",Makedonias St 2800 2898
+ccdata,184210,FIRE/MEDICS NEEDED-FIRE TRUCKS #41 AND #57 DISPATCHED TO FIRE,24.826,36.055,N. Achilleos St / N. Madeg St,fire,3,/ Achilleos Madeg N. N.,,"{'Achilleos', 'Madeg'}",N Achilleos St 7300 7398
+ccdata,184245,DISTURBANCE-NOISE,24.856,36.063,3455 N. Anntigonou St,police,1,3455 Anntigonou N.,4500 4598 Anntigonou,{'Anntigonou'},N Anntigonou St 5000 5098
+ccdata,184304,TRAFFIC STOP,24.856,36.063,N. Mattadou St / N. Anntigonou St,vehicle accident,1,/ Anntigonou Mattadou N. N.,,"{'Mattadou', 'Anntigonou'}",N Anntigonou St 5000 5098
+ccdata,184321,ALL UNITS BROADCAST-BUILDING FIRE,24.826,36.055,N. Achilleos St / N. Madeg St,fire,3,/ Achilleos Madeg N. N.,,"{'Achilleos', 'Madeg'}",N Achilleos St 7300 7398
+ccdata,184328,VANDALISM-REPORT,24.903,36.066,N. Eira St / N. Sina Way,police,2,/ Eira N. N. Sina Way,,"{'Way', 'Sina', 'Eira'}",N Sina Way 899 801
+ccdata,184400,POLICE NEEDED-POLICE UNITS #101 AND #220 DISPATCHED TO FIRE,24.826,36.055,N. Achilleos St / N. Madeg St,police,3,/ Achilleos Madeg N. N.,,"{'Achilleos', 'Madeg'}",N Achilleos St 7300 7398
+ccdata,184441,ALARM-SECURE NO CRIME,24.836,36.069,2112 N. Aveny St,police,0,2112 Aveny N.,2401 2599 Aveny,{'Aveny'},N Aveny St 6499 6301
+ccdata,184522,TRAFFIC STOP,24.856,36.075,5066 N. Berlau St,vehicle accident,1,5066 Berlau N.,5000 5098 Berlau,{'Berlau'},N Berlau St 5000 5098
+ccdata,184547,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,184700,FIRE/MEDICS NEEDED-AMUBLANCE DISPATCHED TO FIRE,24.826,36.055,N. Achilleos St / N. Madeg St,fire,3,/ Achilleos Madeg N. N.,,"{'Achilleos', 'Madeg'}",N Achilleos St 7300 7398
+ccdata,184709,FIRE/MEDICS NEEDED-FIRE TRUCK #23 DISPATCHED TO FIRE,24.826,36.055,N. Achilleos St / N. Madeg St,fire,3,/ Achilleos Madeg N. N.,,"{'Achilleos', 'Madeg'}",N Achilleos St 7300 7398
+ccdata,184711,TRAFFIC STOP,24.826,36.065,N. Arbete St / N. Utmana St,vehicle accident,1,/ Arbete N. N. Utmana,,"{'Arbete', 'Utmana'}",N Arbete St 7200 7298
+ccdata,184756,MISDEMEANOR ASSAULT-IN PROGRESS,24.825,36.048,N. Els St / N. Polvo St,police,2,/ Els N. N. Polvo,,"{'Els', 'Polvo'}",S Els St 7400 7498
+ccdata,184802,POLICE UNIT DISPATCHED-CROWD CONTROL,24.826,36.055,N. Achilleos St / N. Madeg St,police,2,/ Achilleos Madeg N. N.,,"{'Achilleos', 'Madeg'}",N Achilleos St 7300 7398
+ccdata,184943,TRAFFIC STOP,24.855,36.092,Rist Way / N. Desafio St,vehicle accident,2,/ Desafio N. Rist Way,,"{'Way', 'Desafio', 'Rist'}",Rist Way 5100 5198
+ccdata,185021,DISTURBANCE-NOISE,24.862,36.07,2491 N. Thessalias St,police,1,2491 N. Thessalias,901 999 Thessalias,{'Thessalias'},N Thessalias St 3000 3098
+ccdata,185200,ALARM-SECURE NO CRIME,24.86,36.089,3671 N. Valmai St,police,0,3671 N. Valmai,3970 4626 Valmai,{'Valmai'},N Valmai St 4628 4668
+ccdata,185237,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,185501,TRAFFIC STOP,24.826,36.065,N. Arbete St / N. Oddisseos St,vehicle accident,2,/ Arbete N. N. Oddisseos,,"{'Oddisseos', 'Arbete'}",N Arbete St 7200 7298
+ccdata,190200,TRAFFIC STOP,24.826,36.065,N. Arbete St / N. Spetson St,vehicle accident,2,/ Arbete N. N. Spetson,,"{'Arbete', 'Spetson'}",N Arbete St 7200 7298
+ccdata,190348,DISTURBANCE-NOISE,24.836,36.083,N. Hacia St / N. Carretera St,police,1,/ Carretera Hacia N. N.,,"{'Carretera', 'Hacia'}",N Carretera St 6500 6598
+ccdata,190554,PARK CHECK,24.855,36.09,4999 N. Parla St,police,1,4999 N. Parla,901 999 Parla,{'Parla'},N Parla St 4908 4998
+ccdata,190700,TRAFFIC STOP,24.838,36.082,N. Thermopilon St / N. Carnero St,vehicle accident,2,/ Carnero N. N. Thermopilon,,"{'Thermopilon', 'Carnero'}",N Carnero St 6400 6498
+ccdata,191000,ALARM-SECURE NO CRIME,24.862,36.07,2727 N. Thessalias St,police,0,2727 N. Thessalias,2700 2738 Thessalias,{'Thessalias'},N Thessalias St 3000 3098
+ccdata,191407,MISDEMEANOR ASSAULT-IN PROGRESS,24.854,36.069,5097 N. Asiant St,police,2,5097 Asiant N.,5000 5098 Asiant,{'Asiant'},N Asiant St 5114 5298
+ccdata,191607,TRAFFIC STOP,24.871,36.076,3398 N. Polvo St,vehicle accident,2,3398 N. Polvo,3800 3908 Polvo,{'Polvo'},N Polvo St 3700 3798
+ccdata,191702,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,191834,VEHICLE ACCIDENT - REPORT,24.892,36.062,1422 N. Souliou St,vehicle accident,1,1422 N. Souliou,1424 1498 Souliou,{'Souliou'},N Souliou St 2100 2298
+ccdata,191900,VEHICLE ACCIDENT - NO OR UNKNOWN INJURIES,24.892,36.062,1422 N. Souliou St,vehicle accident,1,1422 N. Souliou,1424 1498 Souliou,{'Souliou'},N Souliou St 2100 2298
+ccdata,192042,TRAFFIC STOP,24.863,36.073,N. Spetson St / N. Barabla St,vehicle accident,2,/ Barabla N. N. Spetson,,"{'Spetson', 'Barabla'}",N Barabla St 4500 4598
+ccdata,192048,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.848,36.094,N. Scarkeme St / N. Bilar St,police,2,/ Bilar N. N. Scarkeme,,"{'Bilar', 'Scarkeme'}",N Scarkeme St 5200 5298
+ccdata,192059,FELONY HIT & RUN - IN PROGRESS-WITH INJURY,24.893,36.057,500 Block of N. Schaber Ave,police,2,500 Block N. Schaber of,500 598 Schaber,"{'Block', 'Schaber', 'of'}",N Schaber Ave 1100 1198
+ccdata,192138,FELONY HIT & RUN-IN PROGRESS-WITH INJURY,24.893,36.057,547 N. Schaber Ave,police,2,547 N. Schaber,701 799 Schaber,{'Schaber'},N Schaber Ave 1100 1198
+ccdata,192200,ALL UNITS BROADCAST-FELONY HIT & RUN-BLACK VAN/PARTIAL PLATE #L829,24.838,36.046,ALL UNITS,police,3,ALL UNITS,,"{'UNITS', 'ALL'}",S Wenna St 1040 1026
+ccdata,192300,FIRE/MEDICS DISPATCHED-PEDESTRIAN HIT & RUN,24.893,36.057,547 N. Schaber Ave,fire,3,547 N. Schaber,701 799 Schaber,{'Schaber'},N Schaber Ave 1100 1198
+ccdata,192344,CRIME SCENE INVESTIGATION-REQUEST,24.893,36.057,547 N. Schaber Ave,police,2,547 N. Schaber,701 799 Schaber,{'Schaber'},N Schaber Ave 1100 1198
+ccdata,192415,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.849,36.05,Egeou Ave / Ipsilantou Ave,police,2,/ Egeou Ipsilantou,900 998 Ipsilantou,"{'Ipsilantou', 'Egeou'}",Egeou Ave 5600 5698
+ccdata,192500,DISTURBANCE-NOISE,24.856,36.088,N. Limnou St / Nikomidias St,police,1,/ Limnou N. Nikomidias,Nikomidias,"{'Nikomidias', 'Limnou'}",N Limnou St 4800 4910
+ccdata,192508,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.841,36.08,N. Hacia St / N. Brada St,police,2,/ Brada Hacia N. N.,,"{'Hacia', 'Brada'}",N Brada St 6100 6198
+ccdata,192655,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.829,36.065,N. Antoniadou St / N. Estos St,police,2,/ Antoniadou Estos N. N.,,"{'Estos', 'Antoniadou'}",N Antoniadou St 7050 7098
+ccdata,192700,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.878,36.075,Profitou Ilia St / Egeou Ave,police,2,/ Egeou Ilia Profitou,Ilia Profitou,"{'Profitou', 'Ilia', 'Egeou'}",N Profitou Ilia Ave 3600 3648
+ccdata,193000,TRAFFIC STOP,24.871,36.076,3701 Polvo St,vehicle accident,2,3701 Polvo,701 799 Polvo,{'Polvo'},N Polvo St 3700 3798
+ccdata,193507,RECKLESS/HAZARADOUS DRIVER-IN PROGRESS,24.849,36.05,Egeou Ave / Polvo St,police,2,/ Egeou Polvo,,"{'Polvo', 'Egeou'}",Egeou Ave 5600 5698
+ccdata,193558,PURSUIT-POLICE UNIT #253 IN PURSUIT,24.849,36.05,Egeou Ave / Nia Ave,police,3,/ Egeou Nia,,"{'Nia', 'Egeou'}",Egeou Ave 5600 5698
+ccdata,193600,PURSUIT CONTINUES-POLICE UNITS #253 AND #357/SECOND UNIT JOINS,24.849,36.05,Egeou Ave / Limnou St,police,3,/ Egeou Limnou,,"{'Egeou', 'Limnou'}",Egeou Ave 5600 5698
+ccdata,193700,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.856,36.088,S. Limnou St / S. Eleftherias St,police,2,/ Eleftherias Limnou S. S.,,"{'Limnou', 'Eleftherias'}",N Limnou St 4800 4910
+ccdata,193822,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.826,36.055,N. Limnou St / N. Achilleos St,police,3,/ Achilleos Limnou N. N.,,"{'Achilleos', 'Limnou'}",N Achilleos St 7300 7398
+ccdata,193907,PURSUIT-CONTINUES-POLICE UNITS #253 AND #357,24.856,36.088,N. Limnou St / N. Alexandrias St,police,3,/ Alexandrias Limnou N. N.,,"{'Alexandrias', 'Limnou'}",N Limnou St 4800 4910
+ccdata,193940,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,194000,FELONY ASSAULT/WEAPON-IN PROGRESS,24.858,36.088,N. Alexandrias St / N. Ithakis St,police,3,/ Alexandrias Ithakis N. N.,,"{'Ithakis', 'Alexandrias'}",N Ithakis St 4800 4998
+ccdata,194022,DISTURBANCE-NOISE,24.859,36.088,1615 N. Omirou St,police,1,1615 N. Omirou,1614 1698 Omirou,{'Omirou'},N Omirou St 4800 4898
+ccdata,194041,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.856,36.075,3611 N. Berlau St,police,3,3611 Berlau N.,3600 3698 Berlau,{'Berlau'},N Berlau St 5000 5098
+ccdata,194100,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.856,36.059,3107 N. Alexandrias St,police,2,3107 Alexandrias N.,3100 3198 Alexandrias,{'Alexandrias'},N Alexandrias St 5000 5098
+ccdata,194107,TRAFFIC STOP,24.871,36.076,2708 N. Polvo St,vehicle accident,2,2708 N. Polvo,2700 2798 Polvo,{'Polvo'},N Polvo St 3700 3798
+ccdata,194122,ALARM-SECURE NO CRIME,24.84,36.081,5101 N. Carden St,police,0,5101 Carden N.,5101 5199 Carden,{'Carden'},N Carden St 6135 6101
+ccdata,194129,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.829,36.065,N. Oddisseos St / N. Antoniadou St,police,3,/ Antoniadou N. N. Oddisseos,,"{'Oddisseos', 'Antoniadou'}",N Antoniadou St 7050 7098
+ccdata,194148,SUBJECT STOP,24.847,36.056,3277 N. Agentes St,police,2,3277 Agentes N.,3700 3798 Agentes,{'Agentes'},N Agentes St 5700 5798
+ccdata,194157,FIRE/MEDICS NEEDED-OFFICER DOWN,24.858,36.088,N. Alexandrias St / N. Ithakis St,fire,3,/ Alexandrias Ithakis N. N.,,"{'Ithakis', 'Alexandrias'}",N Ithakis St 4800 4998
+ccdata,194214,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.886,36.072,1492 N. Lumen St,police,3,1492 Lumen N.,1400 1498 Lumen,{'Lumen'},N Lumen St 3300 3398
+ccdata,194222,CHECK ON HAZARD,24.833,36.067,6007 N. Artakis St,police,2,6007 Artakis N.,4600 4798 Artakis,{'Artakis'},N Artakis St 6700 6898
+ccdata,194228,FIRE/MEDICS NEEDED-AMBULANCE DISPATCHED,24.858,36.088,N. Alexandrias St / N. Ithakis St,fire,3,/ Alexandrias Ithakis N. N.,,"{'Ithakis', 'Alexandrias'}",N Ithakis St 4800 4998
+ccdata,194311,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.886,36.072,1066 N. Lumen St,police,3,1066 Lumen N.,601 699 Lumen,{'Lumen'},N Lumen St 3300 3398
+ccdata,194337,DIRE EMERGENCY/POLICE NEEDED-OFFICER DOWN-SEND ADDITIONAL UNITS,24.858,36.088,N. Alexandrias St / N. Ithakis St,police,3,/ Alexandrias Ithakis N. N.,,"{'Ithakis', 'Alexandrias'}",N Ithakis St 4800 4998
+ccdata,194339,DISTURBANCE-NOISE,24.827,36.067,1979 N. Arkadou St,police,1,1979 Arkadou N.,2314 2998 Arkadou,{'Arkadou'},N Arkadou St 7200 7298
+ccdata,194400,ALARM-SECURE NO CRIME,24.826,36.064,5501 Anrop St,police,0,5501 Anrop,5500 5598 Anrop,{'Anrop'},N Anrop St 7308 7398
+ccdata,194411,POLICE UNITS DISPATCHED,24.858,36.088,N. Alexandrias St / N. Ithakis St,police,3,/ Alexandrias Ithakis N. N.,,"{'Ithakis', 'Alexandrias'}",N Ithakis St 4800 4998
+ccdata,194428,DIRE EMERGENCY/SWAT TEAM DISPATCHED,24.858,36.088,N. Alexandrias St / N. Ithakis St,police,3,/ Alexandrias Ithakis N. N.,,"{'Ithakis', 'Alexandrias'}",N Ithakis St 4800 4998
+ccdata,194429,SUSPICIOUS OCCUPIED VEHICLE-BLACK VAN,24.846,36.086,N. Ithakis St / N. Dentro St,police,3,/ Dentro Ithakis N. N.,,"{'Ithakis', 'Dentro'}",N Dentro St 5700 5898
+ccdata,194451,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,194511,MISDEMEANOR ASSAULT-IN PROGRESS,24.827,36.067,N. Arkadou St / N. Sirrakou St,police,2,/ Arkadou N. N. Sirrakou,,"{'Sirrakou', 'Arkadou'}",N Arkadou St 7200 7298
+ccdata,194647,TRAFFIC STOP,24.891,36.067,64 Pafin Rd,vehicle accident,2,64 Pafin,2 98 Pafin,{'Pafin'},Pafin Rd 2 98
+ccdata,194651,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,194700,CRIME SCENE INVESTIGATION REQUEST-LOCATION/PERSON/INCIDENT OF INTEREST,24.892,36.062,1422 N. Souliou St,police,2,1422 N. Souliou,1424 1498 Souliou,{'Souliou'},N Souliou St 2100 2298
+ccdata,194813,ALARM-SECURE NO CRIME,24.838,36.082,6464 N. Carnero St,police,0,6464 Carnero N.,6400 6498 Carnero,{'Carnero'},N Carnero St 6400 6498
+ccdata,194900,VEHICLE ACCIDENT-REPORT,24.844,36.076,N. Pilau St / N. Arkadiou St,vehicle accident,1,/ Arkadiou N. N. Pilau,,"{'Arkadiou', 'Pilau'}",N Pilau St 3699 3097
+ccdata,195233,VANDALISM-REPORT,24.854,36.069,N. Oddisseos St / N. Asiant St,police,2,/ Asiant N. N. Oddisseos,,"{'Oddisseos', 'Asiant'}",N Asiant St 5114 5298
+ccdata,195500,SHOPLIFTING,24.856,36.088,N. Limnou St / N. Berlau St,police,1,/ Berlau Limnou N. N.,,"{'Berlau', 'Limnou'}",N Limnou St 4800 4910
+ccdata,195657,VEHICLE ACCIDENT-REPORT,24.847,36.062,N. Spetson St / N. Androutsou St,vehicle accident,1,/ Androutsou N. N. Spetson,,"{'Androutsou', 'Spetson'}",N Androutsou St 5700 5898
+ccdata,195732,SUBJECT STOP,24.891,36.065,84 Iroon Rd,police,2,84 Iroon,84 98 Iroon,{'Iroon'},Iroon Rd 84 98
+ccdata,200100,TRAFFIC STOP,24.849,36.05, N. Polvo St / Egeou Ave,vehicle accident,2,/ Egeou N. Polvo,,"{'Polvo', 'Egeou'}",Egeou Ave 5600 5698
+ccdata,200545,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,200658,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.878,36.075,2439 N. Profitou Ilia Ave,police,2,2439 Ilia N. Profitou,2400 2498 Ilia Profitou,"{'Profitou', 'Ilia'}",N Profitou Ilia Ave 3600 3648
+ccdata,200659,TRAFFIC STOP,24.847,36.062,N. Prevezis St / N. Androutsou St,vehicle accident,2,/ Androutsou N. N. Prevezis,,"{'Prevezis', 'Androutsou'}",N Androutsou St 5700 5898
+ccdata,200700,CRIME SCENE INVESTIGATION REQUEST-LOCATION/DWELLING OF INTEREST,24.893,36.059,1122 N. Maskin St,police,2,1122 Maskin N.,1122 1298 Maskin,{'Maskin'},N Maskin St 1122 1298
+ccdata,200801,TRAFFIC STOP,24.855,36.092,Rist Way / Niovis St,vehicle accident,1,/ Niovis Rist Way,Rist Way,"{'Niovis', 'Way', 'Rist'}",Rist Way 5100 5198
+ccdata,201000,NARCOTIC ACTIVITY-REPORT,24.893,36.06,N. Dimitriou St / N. Madeg St,police,3,/ Dimitriou Madeg N. N.,,"{'Madeg', 'Dimitriou'}",N Madeg St 1200 1298
+ccdata,201038,VEHICLE ACCIDENT-REPORT,24.856,36.063,N. Polvo St / N. Anntigonou St,vehicle accident,1,/ Anntigonou N. N. Polvo,,"{'Anntigonou', 'Polvo'}",N Anntigonou St 5000 5098
+ccdata,201053,CHECK ON HAZARD,24.844,36.076,N. Pilau St / N. Arkadiou St,police,2,/ Arkadiou N. N. Pilau,,"{'Arkadiou', 'Pilau'}",N Pilau St 3699 3097
+ccdata,201100,ALARM-SECURE NO CRIME,24.838,36.046,2203 N. Wenna St,police,0,2203 N. Wenna,4200 4498 Wenna,{'Wenna'},S Wenna St 1040 1026
+ccdata,201500,TRAFFIC STOP,24.842,36.074,4607 N. Barwyn St,vehicle accident,1,4607 Barwyn N.,4600 4698 Barwyn,{'Barwyn'},N Barwyn St 6200 6298
+ccdata,202103,SUBJECT STOP,24.863,36.073,N. Estos St / N. Barabla St,police,2,/ Barabla Estos N. N.,,"{'Estos', 'Barabla'}",N Barabla St 4500 4598
+ccdata,202221,MISDEMEANOR ASSAULT-IN PROGRESS,24.844,36.058,3184 N. Agisilaou St,police,2,3184 Agisilaou N.,5716 5848 Agisilaou,{'Agisilaou'},N Agisilaou St
+ccdata,202713,INCOMPLETE CALL FOR POLICE,24.838,36.046,,police,0,,"(None, None)",set(),S Wenna St 1040 1026
+ccdata,202842,TRAFFIC STOP,24.847,36.062,N. Polvo St / N. Androutsou St,vehicle accident,1,/ Androutsou N. N. Polvo,,"{'Polvo', 'Androutsou'}",N Androutsou St 5700 5898
+ccdata,202907,SHOPLIFTING,24.852,36.091,2297 Filis St,police,1,2297 Filis,4200 4298 Filis,{'Filis'},N Filis St 5016 5130
+ccdata,203102,NARCOTIC ACTIVITY-REPORT,24.894,36.055,644 S. Honoliau St,police,3,644 Honoliau S.,401 499 Honoliau,{'Honoliau'},N Honoliau Ave 1000 1098
+ccdata,203300,ALARM-SECURE NO CRIME,24.824,36.059,3103 N. Alamanas St,police,0,3103 Alamanas N.,3100 3198 Alamanas,{'Alamanas'},N Alamanas St 7400 7498
+ccdata,203401,PROWLER,24.836,36.069,Niovis St / N. Aveny St,police,2,/ Aveny N. Niovis,,"{'Niovis', 'Aveny'}",N Aveny St 6499 6301
+ccdata,203509,SUBJECT STOP,24.826,36.065,4001 N. Arbete St,police,2,4001 Arbete N.,4100 4198 Arbete,{'Arbete'},N Arbete St 7200 7298
+ccdata,204000,TRAFFIC STOP,24.855,36.092,Vissaraki St / Rist Way,vehicle accident,2,/ Rist Vissaraki Way,Vissaraki,"{'Way', 'Vissaraki', 'Rist'}",Rist Way 5100 5198
+ccdata,204500,VANDALISM-REPORT,24.846,36.086,N. Parla St / N. Dentro St,police,2,/ Dentro N. N. Parla,,"{'Dentro', 'Parla'}",N Dentro St 5700 5898
+ccdata,204817,ALARM-SECURE NO CRIME,24.852,36.091,5401 N. Hix St,police,0,5401 Hix N.,5401 5499 Hix,{'Hix'},N Hix St 5300 5398
+ccdata,205000,NARCOTIC ACTIVITY-REPORT,24.86,36.089,4754 N. Valmai St,police,3,4754 N. Valmai,4752 4902 Valmai,{'Valmai'},N Valmai St 4628 4668
+ccdata,205200,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.844,36.076,N. Pilau St / N. Achilleos St,police,2,/ Achilleos N. N. Pilau,,"{'Achilleos', 'Pilau'}",N Pilau St 3699 3097
+ccdata,210000,TRAFFIC STOP,24.855,36.092,3550 Rist Way,vehicle accident,2,3550 Rist Way,Rist Way,"{'Way', 'Rist'}",Rist Way 5100 5198
+ccdata,210004,SHOPLIFTING,24.873,36.077,2781 N. Estos St,police,1,2781 Estos N.,2700 2780 Estos,{'Estos'},N Estos St 3800 3898
+ccdata,211000,MISDEMEANOR ASSAULT-IN PROGRESS,24.855,36.09,N. Agentes St / N. Parla St,police,2,/ Agentes N. N. Parla,,"{'Parla', 'Agentes'}",N Parla St 4908 4998
+ccdata,211345,TRAFFIC STOP,24.855,36.09,3297 N. Parla St,vehicle accident,2,3297 N. Parla,3950 3998 Parla,{'Parla'},N Parla St 4908 4998
+ccdata,211500,CRIME SCENE INVESTIGATION-REQUEST-LOCATION/PERSON/VEHICLE OF INTEREST,24.858,36.088,N. Alexandrias St / N. Ithakis St,police,2,/ Alexandrias Ithakis N. N.,,"{'Ithakis', 'Alexandrias'}",N Ithakis St 4800 4998
+ccdata,211711,SUBJECT STOP,24.849,36.05,Egeou St / Parla St,police,2,/ Egeou Parla,,"{'Parla', 'Egeou'}",Egeou Ave 5600 5698
+ccdata,211903,CHECK ON HAZARD,24.855,36.092,Exadakitiou Way / Rist Way,police,2,/ Exadakitiou Rist Way Way,Exadakitiou Way,"{'Way', 'Exadakitiou', 'Rist'}",Rist Way 5100 5198
+ccdata,212050,PROWLER,24.831,36.061,N. Limnou St / N. Alm St,police,2,/ Alm Limnou N. N.,,"{'Alm', 'Limnou'}",N Alm St 6900 6998
+ccdata,212111,DRUNK SUBJECT,24.85,36.094,2299 N. Finiatur St,police,1,2299 Finiatur N.,2600 2998 Finiatur,{'Finiatur'},N Finiatur St 5200 5298
+ccdata,212200,CRIME SCENE INVESTIGATION-REQUEST-ADDITIONAL UNITS-LOCATION/DWELLING OF INTEREST,24.893,36.059,1122 N. Maskin St,police,3,1122 Maskin N.,1122 1298 Maskin,{'Maskin'},N Maskin St 1122 1298
+ccdata,212500,SUSPICIOUS SUBJECT/CIRCUMSTANCES-IN PROGRESS,24.826,36.055,S. Mikonou St / S. Achilleos St,police,2,/ Achilleos Mikonou S. S.,,"{'Mikonou', 'Achilleos'}",N Achilleos St 7300 7398
+ccdata,212712,TRAFFIC STOP,24.844,36.076,N. Pilau St / N. Diogenous St,vehicle accident,2,/ Diogenous N. N. Pilau,,"{'Diogenous', 'Pilau'}",N Pilau St 3699 3097
+ccdata,213010,MISDEMEANOR ASSAULT-IN PROGRESS,24.826,36.055,S. Mikonou St / S. Achilleos St,police,2,/ Achilleos Mikonou S. S.,,"{'Mikonou', 'Achilleos'}",N Achilleos St 7300 7398
