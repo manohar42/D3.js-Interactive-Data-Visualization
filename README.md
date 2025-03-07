@@ -26,15 +26,6 @@ D3.js-Interactive-Visualization/
 ### 1. Prerequisites
 Ensure you have:
 - A modern web browser (Chrome, Firefox, Edge).
-- A local web server (for best performance) such as:
-  - Python HTTP Server:
-    ```sh
-    python -m http.server 8000
-    ```
-  - Node.js Live Server:
-    ```sh
-    npx live-server
-    ```
 
 ### 2. Running the Project
 1. Clone the repository:
